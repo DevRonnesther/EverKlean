@@ -214,10 +214,10 @@ const Hero = () => {
           <div className="flex gap-4">
             <Link
             to="/services"
-            className="bg-[#f3c10d] shadow-md text-center w-[180px] place-items-center flex gap-2 p-3 font-medium rounded-lg hover:bg-[#e0b209] transition"
+            className="bg-[#f3c10d] place-items-center items-center inline-flex shadow-md text-center w-[180px] place-items-center flex gap-2 p-3 font-medium rounded-full hover:bg-[#e0b209] transition"
           >
             Our Best Offer
-            <IoIosArrowForward className="bg-white rounded text-lg" />
+              <IoIosArrowForward className="bg-gradient-to-r from-white to-yellow-50 h-8 w-8 animate-pulse  rounded-full  text-lg" />
           </Link>
             <Link
             to="/services"
@@ -468,13 +468,13 @@ const Hero = () => {
               {services.map((service, index) => (
                 <article
                   key={index}
-                  className="bg-white/90// bg-gradient-to-tr from-blue-950 backdrop-blur-md via-blue-800 to-blue-700 bg-[#f3c10d]/10// bg-yellow-300//  rounded-xl shadow-xs p-6 hover:shadow-xs transition"
+                  className="bg-gradient-to-tr from-blue-900 backdrop-blur-md to-blue-800 via-blue-600    rounded-xl shadow-xs p-6 hover:shadow-xs transition"
                 >
                   <div className="flex gap-4 items-center">
-                    <div className="bg-blue-500/20// bg-[#f3c10d]/30// bg-white backdrop-blur-md bg-white// text-[#f3c10d] md:shadow-none rounded-full p-4">
+                    <div className="bg-white/10 backdrop-blur-md  text-white md:shadow-none rounded-full p-4">
                       {service.icon}
                     </div>
-                    <h3 className="font-medium text-xl">{service.name}</h3>
+                    <h3 className="font-bold text-white text-xl">{service.name}</h3>
                   </div>
                   <p className="mt-2 text-white">{service.description}</p>
                 </article>

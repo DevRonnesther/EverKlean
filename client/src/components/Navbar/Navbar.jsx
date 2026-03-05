@@ -16,16 +16,12 @@ import Logo from "../../assets/Brandlogo.png"
 import { FaSquareInstagram } from "react-icons/fa6";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link, NavLink } from "react-router-dom";
+import { QuoteIcon } from "lucide-react";
 
 const HeaderLinks = [
   {
     Display: "Home",
     Link: "/",
-    Icon: <IoIosArrowForward className="rotate-90 place-items-baseline" />,
-  },
-  {
-    Display: "About us",
-    Link: "/aboutUs",
     Icon: <IoIosArrowForward className="rotate-90 place-items-baseline" />,
   },
   {
@@ -36,6 +32,11 @@ const HeaderLinks = [
   {
     Display: "Pages",
     Link: "/service",
+    Icon: <IoIosArrowForward className="rotate-90 place-items-baseline" />,
+  },
+  {
+    Display: "About us",
+    Link: "/aboutUs",
     Icon: <IoIosArrowForward className="rotate-90 place-items-baseline" />,
   },
   {
@@ -50,9 +51,9 @@ const Navbar = () => {
   // className={({isActive}) => `group flex  items-center relative gap-4 lg:gap-2 px-6 lg:p-2 p-2  lg:rounded-lg rounded-sm ${isActive ? 'bg-green-500/20' : 'hover:bg-white/20'}`}
   return (
     <header>
-      <div className="w-full bg-[#f3c10d] h-[32px] flex justify-center items-center">
+      <div className="w-full bg-[#f3c10d] flex justify-center items-center">
         <div className="w-full  justify-items-start">
-          <div className="flex px-12  justify-center items-center gap-8 h-10 p-0.5">
+          <div className="flex px-8  justify-center items-center gap-8  p-0.5">
             <h3 className="flex place-items-center text-sm text-white font-medium gap-2 ">
               <FaRegClock className="text-2xl text-blue-800" /> 08:00 - 17:00
             </h3>
@@ -80,7 +81,7 @@ const Navbar = () => {
       </div>
 
       {/* NavLink section */}
-      <div className="px-[50px] py-2  bg-white  sticky top-0 z-50  place-items-center max-w-full flex justify-between items-center ">
+      <div className="px-[30px] py-1  bg-white  sticky top-0 z-50  place-items-center max-w-full flex justify-between items-center ">
         {/* ------- logo -------- */}
         <div>
           <h3 className="text-xl font-bold text-blue-800 ">EverKlean.com</h3>
@@ -103,7 +104,7 @@ const Navbar = () => {
               >
                 {Data.Display}
                 {/* {Data.Icon} */}
-                {/* <div className={({isActive}) =>
+                {/* <div className={({isActive}) =>c
                 `absolute bg-amber-400 ${isActive ? 'bg-red-500 w-[100px] h-4' : 'bg-amber-500'}`}>God will give me Stella </div> */}
               </NavLink>
               
@@ -114,12 +115,13 @@ const Navbar = () => {
         {/* Contact/Cart Section */}
         <div className="flex items-center space-x-4">
           <a
-            href="https://wa.me/256776464823"
+            href="https://wa.me/+256776464823"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-2 bg-[#f3c10d] hover:bg-blue-400 px-4 py-2 rounded-lg transition-colors"
+            className="flex items-center space-x-2 bg-gradient-to-r// from-blue-900// via-blue-700// to-blue-800// hover:bg-blue-400// px-4 py-2 rounded-xl transition-colors"
           >
-            <span className="hidden sm:inline text-white font-medium">
+            <QuoteIcon className="text-white" />
+            <span className="hidden sm:inline text-blue-800 font-medium">
               Get A Quote
             </span>
           </a>

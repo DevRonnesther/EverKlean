@@ -115,7 +115,7 @@ const Abouts = () => {
         </div>
 
         {/* IMPROVED: Better content structure and styling */}
-        <div className="w-full lg:w-1/2 bg-white rounded-lg px-6 md:px-12 py-8 md:py-12 shadow-xl space-y-6">
+        <div className="w-full lg:w-1/2 bg-white/10// rounded-lg px-6 md:px-12 py-8 md:py-12 shadow-xl// space-y-6">
           <p className="text-blue-900 border-b-2 border-blue-900 pb-2 text-sm font-semibold uppercase tracking-wide">
             Our Mission & Vision
           </p>
@@ -148,9 +148,9 @@ const Abouts = () => {
           {/* IMPROVED: Better button styling with icon */}
           <Link
             to="/services"
-            className="inline-flex bg-gradient-to-tr from-yellow-500 to-yellow-400 shadow-md text-center items-center justify-center gap-2 px-6 py-3 font-semibold rounded-lg hover:shadow-lg hover:from-yellow-600 hover:to-yellow-500 text-white transition-all duration-300 mt-4"
+            className="inline-flex bg-gradient-to-br from-yellow-500 to-yellow-400 shadow-md text-center items-center justify-center gap-2 px-6 py-3 font-semibold rounded-lg hover:shadow-lg hover:from-yellow-600 hover:to-yellow-500 text-white transition-all duration-300 mt-4"
           >
-            More About Us
+           More About Us
             <IoIosArrowForward className="text-lg" />
           </Link>
         </div>

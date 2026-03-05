@@ -24,9 +24,9 @@ const Contact = () => {
         {/* Page Header */}
         <div className="text-center mb-8">
           <div className="w-8 h-1.5 bg-[#f3c10d] rounded-full mx-auto mb-0"></div>
-          <h1 className="text-lg font-bold text-gray-900 mb-2">Contact Us</h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Have questions or feedback? We'd love to hear from you!
+          <h1 className="text-xl font-semibold text-gray-900 mb-2">Get In Touch !</h1>
+          <p className="text-sm leading-1 tracking-tight text-blue-800 max-w-2xl mx-auto">
+            Have questions or feedback? We'd love to hear from you !
           </p>
         </div>
 
@@ -34,8 +34,8 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
           {/* Contact Form */}
           <div className="lg:col-span-2 flex-col-reverse bg-white rounded-xl shadow-md p-8">
-            <h2 className="text-2xl font-bold text-[#f3c10d] mb-6">
-              Send us a message
+            <h2 className="text-xl font-semibold text-[#f3c10d] mb-6">
+              Leave Us A message
             </h2>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               {/* Name Fields */}
@@ -164,7 +164,7 @@ const Contact = () => {
           <div className="space-y-8">
             {/* Newsletter */}
             <div className="bg-white rounded-xl shadow-md p-6">
-              <h3 className="text-xl font-bold text-[#f3c10d] mb-4">
+              <h3 className="text-xl font-semibold text-[#f3c10d] mb-4">
                 Newsletter
               </h3>
               <p className="text-gray-600 mb-4">
@@ -187,7 +187,7 @@ const Contact = () => {
 
             {/* Contact Information */}
             <div className="bg-white rounded-xl shadow-md p-6">
-              <h3 className="text-xl font-bold text-[#f3c10d] mb-4">
+              <h3 className="text-xl font-semibold text-[#f3c10d] mb-4">
                 Contact Information
               </h3>
 

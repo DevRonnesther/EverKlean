@@ -7,7 +7,7 @@ import { FaFacebook, FaLinkedin, FaXTwitter, FaSquareInstagram } from "react-ico
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer className="bg-gradient-to-r// bg-gradient-to-tr backdrop-blur-2xl  bg-yellow-950 to-blue-800// via-yellow-200// from-blue-900// to-blue-800// via-blue-950// text-white py-12 px-4 sm:px-6 lg:px-8">
+    <footer className="bg-gradient-to-r// bg-gradient-to-tr backdrop-blur-2xl  bg-gray-950 to-blue-800// via-yellow-200// from-blue-900// to-blue-800// via-blue-950// text-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand Info */}
